@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/demo01/demo01",
+    "pages/homepage/homepage",
+    "pages/sortpage/sortpage",
+    "pages/recommendpage/recommendpage",
+    "pages/personalCentre/personalCentre",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "enablePullDownRefresh":true,
+    "navigationBarTitleText": "测试标题小程序",
+    "navigationBarTextStyle":"black",
+    "navigationBarBackgroundColor":"#6495ED"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/homepage/homepage",
+      "text": "首页",
+      "iconPath": "icon/shouye.png",
+      "selectedIconPath": "icon/shouye.png"
+    },{
+      "pagePath": "pages/sortpage/sortpage",
+      "text": "分类",
+      "iconPath": "icon/fenlei.png",
+      "selectedIconPath": "icon/fenlei.png"
+    },{
+      "pagePath": "pages/recommendpage/recommendpage",
+      "text": "推荐",
+      "iconPath": "icon/tuijian.png",
+      "selectedIconPath": "icon/tuijian.png"
+    },{
+      "pagePath": "pages/personalCentre/personalCentre",
+      "text": "个人中心",
+      "iconPath": "icon/gerenzhongxin.png",
+      "selectedIconPath": "icon/gerenzhongxin.png"
+    }],
+    "color":"#D3D3D3",
+    "selectedColor":"#000000",
+    "backgroundColor":"#6495ED",
+    "borderStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

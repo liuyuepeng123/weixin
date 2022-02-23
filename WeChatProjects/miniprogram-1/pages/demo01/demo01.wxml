@@ -1,0 +1,26 @@
+<!--pages/demo01/demo01.wxml-->
+<text>1</text>
+<text>2</text>
+<view>333</view>
+<view>444</view>
+<view>{{message}}</view>
+<view>{{mun}}</view>
+<view>是否是人:{{isflag}}</view>
+<view>name:{{person.name}}</view>
+<view>年龄:{{person.age}}</view>
+<view>爱号:{{person.hobb}}</view>
+<checkbox  checked=" {{isflag}}"></checkbox>
+
+<view>{{1+1}}</view>
+<view>{{'1'+'1'}}</view>
+<view>{{mun}}是:{{mun % 2 == 1 ? '奇数':'偶数'}}</view>
+
+<view>
+    <view wx:for="{{person}}" wx:for-item="item" wx:key="name">
+       姓名： {{item.name}}
+       年龄： {{item.age}}
+       <view wx:for="{{item.hobb}}" wx:for-item="hobb1" wx:key="*this">
+                 <view>爱号：{{hobb1}} </view>
+              </view>
+    </view>
+</view>
