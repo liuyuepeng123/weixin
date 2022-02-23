@@ -1,0 +1,139 @@
+view	
+	hover-class
+	hover-start-time
+	hover-stay-time
+text
+	space
+	user-select
+	decode
+image
+	src
+	mode
+	show-menu-by-longpress
+	bindload
+
+navigator 超链接导航
+
+scroll-view 滚动视图
+
+swiper 轮播
+	swiper-item 
+	indicator-dots 
+	indicator-color
+	indicator-active-color
+	autoplay
+	interval
+	previous-margin
+	next-margin
+
+表单
+	button
+	icon   图标
+	progress 进度条
+
+微信文档
+	app.json
+		pages：当前页面有几个页面
+		window: 全局默认窗体属性
+			backgroundTextStyle:"light/dark" --			--下拉样式
+			navigationBarBackgroundColor:"#fff",	--导航栏(navigationBar)
+			navigationBarTitleText:"WeChat",		--标题名称
+			navigationBarTextStyle:"black"			--文字颜色
+			enablePullDownRefresh:true				--下拉刷新
+		tabbar： 标签页
+			"tabBar": {	
+				"list": [{									--图标集合				
+				  "pagePath": "pages/sortpage/sortpage",	--设置访问路径
+				  "text": "首页",							--标题名称
+				  "iconPath": "icon/shouye.png",			--设置未选中时图标路径
+				  "selectedIconPath": "icon/shouye.png"		--设置选中时图标路径
+				},{
+				  "pagePath": "pages/homepage/homepage",
+				  "text": "分类",
+				  "iconPath": "icon/fenlei.png",
+				  "selectedIconPath": "icon/fenlei.png"
+				},{
+				  "pagePath": "pages/recommendpage/recommendpage",
+				  "text": "推荐",
+				  "iconPath": "icon/tuijian.png",
+				  "selectedIconPath": "icon/tuijian.png"
+				},{
+				  "pagePath": "pages/personalCentre/personalCentre",
+				  "text": "个人中心",
+				  "iconPath": "icon/gerenzhongxin.png",
+				  "selectedIconPath": "icon/gerenzhongxin.png"
+				}],
+				"color":"#D3D3D3",							--文字显示颜色
+				"selectedColor":"#000000",					--文字选中时的颜色
+				"backgroundColor":"#6495ED",				--底部背景颜色
+				"borderStyle":"black"						
+			  },
+	页面配置
+		为每一个页面配置标题，全局的为app.json 单独的为每一个pages文件中的xxx.json文件
+		{			
+		  "usingComponents": {},
+		  "navigationBarTitleText": "首页",			--直接增加属性
+		  "navigationBarTextStyle":"black",			--直接增加属性
+		  "navigationBarBackgroundColor":"#6495ED"	--直接增加属性
+		}
+	
+	sitmap配置
+		指项目中sitmap.json 文件中的配置，可以为自己的请求路径增加索引，加快访问速度
+		
+	模板语法
+		1.数据绑定
+			<text></text> 文本标签
+			<view></view> 块级元素类似div
+			<checkbox></checkbox> 复选框	checked
+			{{message}}       js 文件中的data:{message:"holle"}
+			<block></block>	--用于占位，标签不会显示
+		2.运算
+			在花括号中 进行简单的加减乘除 取余操作、三元表达式
+			
+		3.列表渲染
+			wx:for	--循环
+			<view wx:for="{{}}" wx:for-item="循环项名称" wx:for-index="循环项的索引"></view>
+			wx:key ="唯一的值"--用来提高列表渲染的性能 wx:key="*this"--表示一个普通数组
+			
+		4.条件渲染
+			wx:if ,wx:elif,wx:else
+			hidden  --hidden 是false 才会显示 通过样式来控制的 display:hidden
+		18
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
